@@ -61,14 +61,15 @@ public class CalculatorFrame extends javax.swing.JFrame {
             }
         });
     // Monthly Payment Function Call
-    double monthlyPayment = monthlyLoanPayment(.005, 1, 1000);
+    double monthlyPayment = monthlyLoanPayment(.05, 1, 1000);
     
     // Print the result to the console
     System.out.printf("Test Monthly Payment: $%.2f\n", monthlyPayment);
     }
 
 // Monthly Payment Function
-public static double monthlyLoanPayment(double monthlyInt, int yrs, double initAmount) {
+public static double monthlyLoanPayment(double interestRate, int yrs, double initAmount) {
+        double monthlyInt = interestRate / 12;
         double payment = (initAmount * monthlyInt) / (1 - (1 / Math.pow(1 + monthlyInt, yrs * 12)));
         return payment;
     }
