@@ -4,7 +4,7 @@ public class MonthlyLoanCalc {
         // Monthly Payment Function
     public static double monthlyLoanPayment(double interestRate, int yrs, double initAmount) {
          if (interestRate == 0) { 
-            // Handle case where there's no interest
+            // if 0 interest
             return initAmount / (yrs * 12);
         }
         double monthlyInt = interestRate / 12;
