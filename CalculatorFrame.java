@@ -63,7 +63,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
             }
         });
     // Call the helper method
-        double monthlyPayment = MonthlyLoanCalc.monthlyLoanPayment(.05, 1, 1000);
+    double monthlyPayment = MonthlyLoanCalc.monthlyLoanPayment(.05, 1, 1000);
 
     // Output the result
     System.out.println("Your monthly payment is: $" + String.format("%.2f", monthlyPayment));
