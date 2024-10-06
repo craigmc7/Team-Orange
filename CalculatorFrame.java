@@ -1,6 +1,8 @@
 
 package financialcalculators;
 
+import financialcalculators.MonthlyLoanCalc; //Loan Calc import
+
 public class CalculatorFrame extends javax.swing.JFrame {
 
     public CalculatorFrame() {
@@ -60,20 +62,13 @@ public class CalculatorFrame extends javax.swing.JFrame {
                 new CalculatorFrame().setVisible(true);
             }
         });
-    // Monthly Payment Function Call
-    double monthlyPayment = monthlyLoanPayment(.05, 1, 1000);
+    // Call the helper method
+        double monthlyPayment = MonthlyLoanCalc.monthlyLoanPayment(.05, 1, 1000);
+
+    // Output the result
+    System.out.println("Your monthly payment is: $" + String.format("%.2f", monthlyPayment));
+    }
     
-    // Print the result to the console
-    System.out.printf("Test Monthly Payment: $%.2f\n", monthlyPayment);
-    }
-
-// Monthly Payment Function
-public static double monthlyLoanPayment(double interestRate, int yrs, double initAmount) {
-        double monthlyInt = interestRate / 12;
-        double payment = (initAmount * monthlyInt) / (1 - (1 / Math.pow(1 + monthlyInt, yrs * 12)));
-        return payment;
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
 
