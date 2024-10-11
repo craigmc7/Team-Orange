@@ -126,6 +126,21 @@ public class CalculatorFrame extends javax.swing.JFrame {
 
             // Helper Call
             double monthlyPayment = MonthlyLoanCalc.monthlyLoanPayment(interestRate, years, principal);
+            if (monthlyPayment==-1){
+                jTextField1.requestFocus();
+                jTextField1.setText("");
+                throw new NumberFormatException();
+            }
+            else if (monthlyPayment==-2){
+                jTextField2.requestFocus();
+                jTextField2.setText("");
+                throw new NumberFormatException();
+            }
+            else if (monthlyPayment==-3){
+                jTextField3.requestFocus();
+                jTextField3.setText("");
+                throw new NumberFormatException();
+            }
             jTextField4.setText(String.format("%.2f", monthlyPayment));
         } catch (NumberFormatException e) {          
             jTextField4.setText("Invalid input");
