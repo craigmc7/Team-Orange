@@ -52,25 +52,48 @@ public class MonthlyLoanCalcTest {
     }
     @Test
     public void monthlyloanpositiveinterest(){
+        //needs fixed
         System.out.println("Test positive interest");
         double interestRate = 10.0;
         int yrs = 10;
         double initAmount = 120;
         double expResult = 1.59;
         double result = MonthlyLoanCalc.monthlyLoanPayment(interestRate, yrs, initAmount);
+        //round to 2 decimals
+        result*=100;
+        result = Math.round(result);
+        result/=100;
         assertEquals(expResult, result, 0);
     }
+    @Test
     public void monthlyloannegativeinterest(){
-        
+        System.out.println("Test negative interest");
+        double interestRate = -10.0;
+        int yrs = 10;
+        double initAmount = 120;
+        double expResult = -3;
+        double result = MonthlyLoanCalc.monthlyLoanPayment(interestRate, yrs, initAmount);
+        assertEquals(expResult, result, 0);
     }
+    @Test
     public void monthlyloanzeroyears(){
-        
+        System.out.println("Test zero years");
+        double interestRate = 10.0;
+        int yrs = 0;
+        double initAmount = 120;
+        double expResult = -2;
+        double result = MonthlyLoanCalc.monthlyLoanPayment(interestRate, yrs, initAmount);
+        assertEquals(expResult, result, 0);
     }
-    public void monthlyloanpositiveyears(){
-        
-    }
+    @Test
     public void monthlyloannegativeyears(){
-        
+        System.out.println("Test negative years");
+        double interestRate = 10.0;
+        int yrs = -10;
+        double initAmount = 120;
+        double expResult = -2;
+        double result = MonthlyLoanCalc.monthlyLoanPayment(interestRate, yrs, initAmount);
+        assertEquals(expResult, result, 0);
     }
     @Test
     public void monthlyloanzeroinitamount(){
@@ -78,14 +101,18 @@ public class MonthlyLoanCalcTest {
         double interestRate = 10.0;
         int yrs = 10;
         double initAmount = 0;
-        double expResult = 0;
+        double expResult = -1;
         double result = MonthlyLoanCalc.monthlyLoanPayment(interestRate, yrs, initAmount);
         assertEquals(expResult, result, 0);
     }
-    public void monthlyloanpositiveinitamount(){
-        
-    }
+    @Test
     public void monthlyloannegativeinitamount(){
-        
+        System.out.println("Test zero years");
+        double interestRate = 10.0;
+        int yrs = 10;
+        double initAmount = -120;
+        double expResult = -1;
+        double result = MonthlyLoanCalc.monthlyLoanPayment(interestRate, yrs, initAmount);
+        assertEquals(expResult, result, 0);
     }
 }
