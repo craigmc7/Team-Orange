@@ -28,14 +28,11 @@ public class CalculatorFrame extends javax.swing.JFrame {
 
         jLabel1.setText("Monthly Loan Payment Calculator");
 
-        jTextField1.setText("$");
         jTextField1.setActionCommand("<Not Set>");
 
-        jTextField2.setText("Years");
+        jLabel2.setText("Principal ($):");
 
-        jLabel2.setText("Principal Amount:");
-
-        jLabel3.setText("Loan Term:");
+        jLabel3.setText("Loan Term (Years):");
 
         jLabel4.setText("Interest Rate:");
 
@@ -76,11 +73,15 @@ public class CalculatorFrame extends javax.swing.JFrame {
                                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton1))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel3)
+                                        .addGap(0, 0, Short.MAX_VALUE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel1)
@@ -120,11 +121,11 @@ public class CalculatorFrame extends javax.swing.JFrame {
         try {
             
             double principal = Double.parseDouble(jTextField1.getText()); // Principal Amount
-            double annualInterestRate = Double.parseDouble(jTextField3.getText()); // Interest Rate
-            int termYears = Integer.parseInt(jTextField2.getText()); // Years
+            double interestRate = Double.parseDouble(jTextField3.getText()); // Interest Rate
+            int years = Integer.parseInt(jTextField2.getText()); // Years
 
             // Helper Call
-            double monthlyPayment = MonthlyLoanCalc.monthlyLoanPayment(annualInterestRate / 100, termYears, principal);
+            double monthlyPayment = MonthlyLoanCalc.monthlyLoanPayment(interestRate, years, principal);
             jTextField4.setText(String.format("%.2f", monthlyPayment));
         } catch (NumberFormatException e) {          
             jTextField4.setText("Invalid input");
