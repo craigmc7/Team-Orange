@@ -3,6 +3,16 @@ package financialcalculators;
 public class MonthlyLoanCalc {
         // Monthly Payment Function
     public static double monthlyLoanPayment(double interestRate, int yrs, double initAmount) {
+        interestRate /=100;
+        if (initAmount<=0){
+            return -1;
+        }
+        if (yrs<=0){
+            return -2;
+        }
+        if (interestRate<0){
+            return -3;
+        }
          if (interestRate == 0) { 
             //if 0 interest
             return initAmount / (yrs * 12);
