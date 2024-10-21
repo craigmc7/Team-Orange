@@ -15,9 +15,9 @@ public class MortgagePaymentCalc {
         if (yrs<=0) {
             return -2;
         }
-        if (interestRate<0)
+        if (interestRate<0){
             return -3;
-        
+        }
             //calculate interest rate percentage into monthly interest float value
         double monthlyInt = interestRate/100/12;
         
