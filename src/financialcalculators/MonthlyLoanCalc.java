@@ -1,7 +1,7 @@
 package financialcalculators;
 
 public class MonthlyLoanCalc {
-        // Monthly Payment Function
+        // Monthly Loan Payment Function
     public static double monthlyLoanPayment(double interestRate, int yrs, double initAmount) {
         interestRate /=100;
         if (initAmount<=0){
