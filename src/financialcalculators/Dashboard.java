@@ -164,7 +164,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel9.setText("Principal ($):");
         jLabel9.setName(""); // NOI18N
 
-        jLabel14.setText("Loan Term (years):");
+        jLabel14.setText("Loan Term (Years):");
 
         jLabel15.setText("Interest Rate (%):");
 
