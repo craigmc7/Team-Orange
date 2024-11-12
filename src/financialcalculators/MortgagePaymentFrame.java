@@ -47,6 +47,11 @@ public class MortgagePaymentFrame extends javax.swing.JFrame {
         jLabel4.setText("Interest Rate (%):");
 
         jButton1.setText("Calculate");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,6 +145,22 @@ public class MortgagePaymentFrame extends javax.swing.JFrame {
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try {
+            //Prepare for helper call
+            double initAmount = Double.parseDouble(jTextField1.getText());
+            int yrs = Integer.parseInt(jTextField2.getText());
+            double interestRate = Double.parseDouble(jTextField3.getText());
+            
+            //Helper Call
+            double mortgagePayment = MortgagePaymentCalc.monthlyMortgagePayment(initAmount,yrs,interestRate);
+            
+            jTextField4.setText(String.format("%.2f",mortgagePayment));
+        } catch (NumberFormatException e) {
+            jTextField4.setText("Invalid Input");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
