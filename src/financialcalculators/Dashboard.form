@@ -9,12 +9,60 @@
             <Property name="text" type="java.lang.String" value="Open Tab"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="HAMenuItem">
               <Properties>
                 <Property name="text" type="java.lang.String" value="House Affordablity"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HAMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MLMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Monthly Loan"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MLMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MPMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Mortgage Payment"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MPMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="BvLMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Buy vs Loan"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BvLMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="CCMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Currency Converter"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CCMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="ALMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Auto Loan"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ALMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MPayoffMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Mortgage Payoff"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MPayoffMenuItemActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -185,9 +233,13 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="HAlabel" pref="120" max="32767" attributes="0"/>
+                              <Component id="HAlabel" max="32767" attributes="0"/>
                               <Component id="MLlabel" max="32767" attributes="0"/>
                               <Component id="MPlabel" alignment="0" max="32767" attributes="0"/>
+                              <Component id="BvLlabel" alignment="0" max="32767" attributes="0"/>
+                              <Component id="CClabel" alignment="0" pref="120" max="32767" attributes="0"/>
+                              <Component id="ALlabel" alignment="1" max="32767" attributes="0"/>
+                              <Component id="MPayofflabel" alignment="1" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -202,7 +254,15 @@
                           <Component id="MLlabel" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="MPlabel" min="-2" pref="30" max="-2" attributes="0"/>
-                          <EmptySpace pref="405" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="BvLlabel" min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="CClabel" min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="ALlabel" min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="MPayofflabel" min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace pref="261" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -248,6 +308,58 @@
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MPlabelMouseClicked"/>
                     <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MPlabelMouseEntered"/>
                     <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MPlabelMouseExited"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="BvLlabel">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="60" red="fe" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;u&gt;Buy vs Loan&lt;/u&gt;&lt;/html&gt;"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BvLlabelMouseClicked"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BvLlabelMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BvLlabelMouseExited"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="CClabel">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="60" red="fe" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;u&gt;Currency Converter&lt;/u&gt;&lt;/html&gt;"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CClabelMouseClicked"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CClabelMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CClabelMouseExited"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="ALlabel">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="60" red="fe" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;u&gt;Auto Loan&lt;/u&gt;&lt;/html&gt;"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ALlabelMouseClicked"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ALlabelMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ALlabelMouseExited"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="MPayofflabel">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="60" red="fe" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;u&gt;Mortgage Payoff&lt;/u&gt;&lt;/html&gt;"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MPayofflabelMouseClicked"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MPayofflabelMouseEntered"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MPayofflabelMouseExited"/>
                   </Events>
                 </Component>
               </SubComponents>
@@ -538,8 +650,8 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="tab5">
-                <Property name="tabTitle" type="java.lang.String" value="tab5"/>
+              <JTabbedPaneConstraints tabName="Currency Converter">
+                <Property name="tabTitle" type="java.lang.String" value="Currency Converter"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -563,8 +675,8 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="tab6">
-                <Property name="tabTitle" type="java.lang.String" value="tab6"/>
+              <JTabbedPaneConstraints tabName="Auto Loan">
+                <Property name="tabTitle" type="java.lang.String" value="Auto Loan"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -572,15 +684,416 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="1500" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AutoLoanTab" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="730" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AutoLoanTab" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="AutoLoanTab">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel12">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Total Price">
+                        <Property name="tabTitle" type="java.lang.String" value="Total Price"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jLabel17" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel18" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel19" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel20" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel21" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel22" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="calculateMonthlyPay" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="inputSalesTax2" alignment="0" pref="118" max="32767" attributes="0"/>
+                                          <Component id="inputTradeIn2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="inputDownPayment2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="inputIntRate2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="inputLoanTerm2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="inputVehiclePrice" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="TotalPriceresult1" alignment="0" min="-2" pref="242" max="-2" attributes="0"/>
+                                          <Component id="TotalPriceresult2" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                          <Component id="TotalPriceresult3" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                          <Component id="TotalPriceresult6" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                          <Component id="TotalPriceresult5" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                          <Component id="TotalPriceresult4" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="912" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputVehiclePrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="TotalPriceresult1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputLoanTerm2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="TotalPriceresult2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputIntRate2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputDownPayment2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="TotalPriceresult3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="TotalPriceresult4" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="inputTradeIn2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TotalPriceresult5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="inputSalesTax2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TotalPriceresult6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="calculateMonthlyPay" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="443" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="inputVehiclePrice">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inputVehiclePriceActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputLoanTerm2">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputIntRate2">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputDownPayment2">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputTradeIn2">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputSalesTax2">
+                    </Component>
+                    <Component class="javax.swing.JButton" name="calculateMonthlyPay">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="calculate"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calculateMonthlyPayActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel17">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Auto Price"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel18">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Loan Term"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel19">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Interest Rate"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel20">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Down Payment"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel21">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Trade In Value"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel22">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sales Tax"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="TotalPriceresult1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Monthly Loan Payment: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="TotalPriceresult2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total Loan Amount: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="TotalPriceresult3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total Sales Tax: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="TotalPriceresult4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total of all Loan Payments:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="TotalPriceresult5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total Loan Interest:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="TotalPriceresult6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total Cost: "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel13">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Monthly Payment">
+                        <Property name="tabTitle" type="java.lang.String" value="Monthly Payment"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jLabel23" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel24" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel26" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel27" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel28" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel29" alignment="1" min="-2" pref="81" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="calculateTotalPrice" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="monthlyPay" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="inputLoanTerm" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="inputIntRate" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="inputDownPayment" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="inputTradeIn" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="inputSalesTax" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="MonthlyPaymentresult1" alignment="0" min="-2" pref="242" max="-2" attributes="0"/>
+                                  <Component id="MonthlyPaymentresult2" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                  <Component id="MonthlyPaymentresult3" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                  <Component id="MonthlyPaymentresult6" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                  <Component id="MonthlyPaymentresult5" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                                  <Component id="MonthlyPaymentresult4" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="952" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="monthlyPay" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputLoanTerm" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputIntRate" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputDownPayment" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputTradeIn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="inputSalesTax" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="MonthlyPaymentresult1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="MonthlyPaymentresult2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="MonthlyPaymentresult3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="MonthlyPaymentresult4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="MonthlyPaymentresult5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="MonthlyPaymentresult6" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="calculateTotalPrice" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="452" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="monthlyPay">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputLoanTerm">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputIntRate">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputDownPayment">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputTradeIn">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="inputSalesTax">
+                    </Component>
+                    <Component class="javax.swing.JButton" name="calculateTotalPrice">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="calculate"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calculateTotalPriceActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel23">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Monthly Payment"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel24">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Loan Term"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel26">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Interest Rate"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel27">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Down Payment"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel28">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Trade In Value"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel29">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sales Tax"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MonthlyPaymentresult6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total Cost: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MonthlyPaymentresult5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total Loan Interest:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MonthlyPaymentresult4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total of all Loan Payments:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MonthlyPaymentresult3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total Sales Tax: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MonthlyPaymentresult2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Total Loan Amount: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MonthlyPaymentresult1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Monthly Loan Payment: "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel7">
           <AuxValues>
@@ -588,8 +1101,8 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="tab7">
-                <Property name="tabTitle" type="java.lang.String" value="tab7"/>
+              <JTabbedPaneConstraints tabName="Mortgage Payoff">
+                <Property name="tabTitle" type="java.lang.String" value="Mortgage Payoff"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
