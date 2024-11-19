@@ -15,15 +15,13 @@ public class Dashboard extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        HAlabel = new javax.swing.JLabel();
+        MLlabel = new javax.swing.JLabel();
+        MPlabel = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -68,6 +66,7 @@ public class Dashboard extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setPreferredSize(new java.awt.Dimension(1500, 800));
         setSize(new java.awt.Dimension(1500, 800));
 
@@ -93,102 +92,115 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel1.setLayout(null);
 
-        jLabel17.setBackground(new java.awt.Color(254, 90, 0));
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financialcalculators/ImageDependencies/houseAffordability.png"))); // NOI18N
-        jLabel17.setVerifyInputWhenFocusTarget(false);
-        jLabel17.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel17MouseClicked(evt);
-            }
-        });
-        jLabel17.setBorder(border);
-        jPanel1.add(jLabel17);
-        jLabel17.setBounds(1220, 20, 160, 192);
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financialcalculators/ImageDependencies/monthlyLoan.png"))); // NOI18N
-        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel18MouseClicked(evt);
-            }
-        });
-        jLabel18.setBorder(border);
-        jPanel1.add(jLabel18);
-        jLabel18.setBounds(1040, 20, 160, 192);
-
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financialcalculators/ImageDependencies/monthlyLoan.png"))); // NOI18N
-        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel19MouseClicked(evt);
-            }
-        });
-        jLabel18.setBorder(border);
-        jPanel1.add(jLabel19);
-        jLabel19.setBounds(1220, 260, 160, 192);
-
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financialcalculators/ImageDependencies/monthlyLoan.png"))); // NOI18N
-        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel20MouseClicked(evt);
-            }
-        });
-        jLabel18.setBorder(border);
-        jPanel1.add(jLabel20);
-        jLabel20.setBounds(860, 260, 160, 192);
-
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financialcalculators/ImageDependencies/monthlyLoan.png"))); // NOI18N
-        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel21MouseClicked(evt);
-            }
-        });
-        jLabel18.setBorder(border);
-        jPanel1.add(jLabel21);
-        jLabel21.setBounds(680, 260, 160, 192);
-
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financialcalculators/ImageDependencies/monthlyLoan.png"))); // NOI18N
-        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel22MouseClicked(evt);
-            }
-        });
-        jLabel18.setBorder(border);
-        jPanel1.add(jLabel22);
-        jLabel22.setBounds(1040, 260, 160, 192);
-
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financialcalculators/ImageDependencies/monthlyLoan.png"))); // NOI18N
-        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel23MouseClicked(evt);
-            }
-        });
-        jLabel18.setBorder(border);
-        jPanel1.add(jLabel23);
-        jLabel23.setBounds(860, 20, 160, 192);
-
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financialcalculators/ImageDependencies/monthlyLoan.png"))); // NOI18N
-        jLabel24.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel24MouseClicked(evt);
-            }
-        });
-        jLabel18.setBorder(border);
-        jPanel1.add(jLabel24);
-        jLabel24.setBounds(680, 20, 160, 192);
+        jLabel25.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel25.setText("MC Finance");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 610, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                .addContainerGap(182, Short.MAX_VALUE)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(163, 163, 163))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel9);
-        jPanel9.setBounds(20, 20, 610, 680);
+        jPanel9.setBounds(430, 20, 610, 110);
+
+        jPanel10.setBackground(new java.awt.Color(96, 0, 21));
+        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+
+        HAlabel.setForeground(new java.awt.Color(254, 90, 0));
+        HAlabel.setText("<html><u>House Affordability</u></html>");
+        HAlabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        HAlabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HAlabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                HAlabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                HAlabelMouseExited(evt);
+            }
+        });
+
+        MLlabel.setForeground(new java.awt.Color(254, 96, 0));
+        MLlabel.setText("<html><u>Monthly Loan</u></html>");
+        MLlabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MLlabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                MLlabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                MLlabelMouseExited(evt);
+            }
+        });
+
+        MPlabel.setForeground(new java.awt.Color(254, 96, 0));
+        MPlabel.setText("<html><u>Mortage Payment</u></html>");
+        MPlabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MPlabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                MPlabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                MPlabelMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(HAlabel, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                    .addComponent(MLlabel)
+                    .addComponent(MPlabel))
+                .addContainerGap())
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(HAlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MLlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MPlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(405, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel10);
+        jPanel10.setBounds(20, 150, 140, 540);
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1120, Short.MAX_VALUE)
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 540, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel11);
+        jPanel11.setBounds(200, 150, 1120, 540);
 
         jTabbedPane1.addTab("Dashboard", null, jPanel1, "");
 
@@ -196,7 +208,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1400, Short.MAX_VALUE)
+            .addGap(0, 1500, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,7 +255,7 @@ public class Dashboard extends javax.swing.JFrame {
                             .addComponent(jButton1)
                             .addComponent(jLabel11)
                             .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(1122, Short.MAX_VALUE))
+                        .addContainerGap(1222, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -332,7 +344,7 @@ public class Dashboard extends javax.swing.JFrame {
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(1097, Short.MAX_VALUE))
+                .addContainerGap(1197, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -365,7 +377,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1400, Short.MAX_VALUE)
+            .addGap(0, 1500, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -379,7 +391,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1400, Short.MAX_VALUE)
+            .addGap(0, 1500, Short.MAX_VALUE)
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -393,7 +405,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1400, Short.MAX_VALUE)
+            .addGap(0, 1500, Short.MAX_VALUE)
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -481,7 +493,7 @@ public class Dashboard extends javax.swing.JFrame {
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel8))))))
-                .addContainerGap(990, Short.MAX_VALUE))
+                .addContainerGap(1090, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -548,7 +560,7 @@ public class Dashboard extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1400, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -678,41 +690,56 @@ public class Dashboard extends javax.swing.JFrame {
         System.out.println(l);
     }//GEN-LAST:event_jPanel1MouseClicked
 
-    private void jLabel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseClicked
+    private void HAlabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAlabelMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel24MouseClicked
+        HAlabel.setText(String.format("<html><u><b>House Affordability</b></u></html>"));
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_HAlabelMouseEntered
 
-    private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
+    private void HAlabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAlabelMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel23MouseClicked
+        HAlabel.setText("<html><u>House Affordability</u></html>");
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_HAlabelMouseExited
 
-    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel22MouseClicked
-
-    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel21MouseClicked
-
-    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel20MouseClicked
-
-    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel19MouseClicked
-
-    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
-        // TODO add your handling code here:
-        jTabbedPane1.addTab("Monthly Loan", jPanel3);
-        int tabCount = jTabbedPane1.getTabCount();
-        jTabbedPane1.setSelectedIndex(tabCount-1);
-    }//GEN-LAST:event_jLabel18MouseClicked
-
-    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+    private void HAlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAlabelMouseClicked
         // TODO add your handling code here:
         openHouseAffordability();
-    }//GEN-LAST:event_jLabel17MouseClicked
+    }//GEN-LAST:event_HAlabelMouseClicked
+
+    private void MLlabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MLlabelMouseEntered
+        // TODO add your handling code here:
+        MLlabel.setText(String.format("<html><u><b>Monthly Loan</b></u></html>"));
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_MLlabelMouseEntered
+
+    private void MLlabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MLlabelMouseExited
+        // TODO add your handling code here:
+        MLlabel.setText("<html><u>Monthly Loan</u></html>");
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_MLlabelMouseExited
+
+    private void MLlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MLlabelMouseClicked
+        // TODO add your handling code here:
+        openMonthlyLoan();
+    }//GEN-LAST:event_MLlabelMouseClicked
+
+    private void MPlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MPlabelMouseClicked
+        // TODO add your handling code here:
+        openMortgagePayment();
+    }//GEN-LAST:event_MPlabelMouseClicked
+
+    private void MPlabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MPlabelMouseEntered
+        // TODO add your handling code here:
+        MPlabel.setText(String.format("<html><u><b>Mortgage Payment</b></u></html>"));
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_MPlabelMouseEntered
+
+    private void MPlabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MPlabelMouseExited
+        // TODO add your handling code here:
+        MPlabel.setText("<html><u>Mortgage Payment</u></html>");
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_MPlabelMouseExited
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -786,7 +813,22 @@ public class Dashboard extends javax.swing.JFrame {
         int tabCount = jTabbedPane1.getTabCount();
         jTabbedPane1.setSelectedIndex(tabCount-1);
     }
+    
+    public void openMonthlyLoan(){
+        jTabbedPane1.addTab("Monthly Loan", jPanel3);
+        int tabCount = jTabbedPane1.getTabCount();
+        jTabbedPane1.setSelectedIndex(tabCount-1);
+    }
+    
+    public void openMortgagePayment(){
+        jTabbedPane1.addTab("Mortgage Payment", jPanel4);
+        int tabCount = jTabbedPane1.getTabCount();
+        jTabbedPane1.setSelectedIndex(tabCount-1);
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel HAlabel;
+    private javax.swing.JLabel MLlabel;
+    private javax.swing.JLabel MPlabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -798,15 +840,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -819,6 +854,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
