@@ -21,6 +21,10 @@ public class Dashboard extends javax.swing.JFrame {
         HAlabel = new javax.swing.JLabel();
         MLlabel = new javax.swing.JLabel();
         MPlabel = new javax.swing.JLabel();
+        BvLlabel = new javax.swing.JLabel();
+        CClabel = new javax.swing.JLabel();
+        ALlabel = new javax.swing.JLabel();
+        MPayofflabel = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -45,6 +49,47 @@ public class Dashboard extends javax.swing.JFrame {
         jTextField11 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
+        AutoLoanTab = new javax.swing.JTabbedPane();
+        jPanel12 = new javax.swing.JPanel();
+        inputVehiclePrice = new javax.swing.JTextField();
+        inputLoanTerm2 = new javax.swing.JTextField();
+        inputIntRate2 = new javax.swing.JTextField();
+        inputDownPayment2 = new javax.swing.JTextField();
+        inputTradeIn2 = new javax.swing.JTextField();
+        inputSalesTax2 = new javax.swing.JTextField();
+        calculateMonthlyPay = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        TotalPriceresult1 = new javax.swing.JLabel();
+        TotalPriceresult2 = new javax.swing.JLabel();
+        TotalPriceresult3 = new javax.swing.JLabel();
+        TotalPriceresult4 = new javax.swing.JLabel();
+        TotalPriceresult5 = new javax.swing.JLabel();
+        TotalPriceresult6 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        monthlyPay = new javax.swing.JTextField();
+        inputLoanTerm = new javax.swing.JTextField();
+        inputIntRate = new javax.swing.JTextField();
+        inputDownPayment = new javax.swing.JTextField();
+        inputTradeIn = new javax.swing.JTextField();
+        inputSalesTax = new javax.swing.JTextField();
+        calculateTotalPrice = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        MonthlyPaymentresult6 = new javax.swing.JLabel();
+        MonthlyPaymentresult5 = new javax.swing.JLabel();
+        MonthlyPaymentresult4 = new javax.swing.JLabel();
+        MonthlyPaymentresult3 = new javax.swing.JLabel();
+        MonthlyPaymentresult2 = new javax.swing.JLabel();
+        MonthlyPaymentresult1 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
@@ -62,7 +107,13 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        HAMenuItem = new javax.swing.JMenuItem();
+        MLMenuItem = new javax.swing.JMenuItem();
+        MPMenuItem = new javax.swing.JMenuItem();
+        BvLMenuItem = new javax.swing.JMenuItem();
+        CCMenuItem = new javax.swing.JMenuItem();
+        ALMenuItem = new javax.swing.JMenuItem();
+        MPayoffMenuItem = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -161,6 +212,62 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
+        BvLlabel.setForeground(new java.awt.Color(254, 96, 0));
+        BvLlabel.setText("<html><u>Buy vs Loan</u></html>");
+        BvLlabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BvLlabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                BvLlabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BvLlabelMouseExited(evt);
+            }
+        });
+
+        CClabel.setForeground(new java.awt.Color(254, 96, 0));
+        CClabel.setText("<html><u>Currency Converter</u></html>");
+        CClabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CClabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                CClabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                CClabelMouseExited(evt);
+            }
+        });
+
+        ALlabel.setForeground(new java.awt.Color(254, 96, 0));
+        ALlabel.setText("<html><u>Auto Loan</u></html>");
+        ALlabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ALlabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ALlabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ALlabelMouseExited(evt);
+            }
+        });
+
+        MPayofflabel.setForeground(new java.awt.Color(254, 96, 0));
+        MPayofflabel.setText("<html><u>Mortgage Payoff</u></html>");
+        MPayofflabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MPayofflabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                MPayofflabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                MPayofflabelMouseExited(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -168,9 +275,13 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(HAlabel, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                    .addComponent(HAlabel)
                     .addComponent(MLlabel)
-                    .addComponent(MPlabel))
+                    .addComponent(MPlabel)
+                    .addComponent(BvLlabel)
+                    .addComponent(CClabel, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                    .addComponent(ALlabel, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(MPayofflabel, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
@@ -182,7 +293,15 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(MLlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(MPlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(405, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BvLlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(CClabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ALlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MPayofflabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(261, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel10);
@@ -384,21 +503,260 @@ public class Dashboard extends javax.swing.JFrame {
             .addGap(0, 730, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("tab5", jPanel5);
+        jTabbedPane1.addTab("Currency Converter", jPanel5);
         jTabbedPane1.removeTabAt(1);
+
+        inputVehiclePrice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                inputVehiclePriceActionPerformed(evt);
+            }
+        });
+
+        calculateMonthlyPay.setText("calculate");
+        calculateMonthlyPay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calculateMonthlyPayActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setText("Auto Price");
+
+        jLabel18.setText("Loan Term");
+
+        jLabel19.setText("Interest Rate");
+
+        jLabel20.setText("Down Payment");
+
+        jLabel21.setText("Trade In Value");
+
+        jLabel22.setText("Sales Tax");
+
+        TotalPriceresult1.setText("Monthly Loan Payment: ");
+
+        TotalPriceresult2.setText("Total Loan Amount: ");
+
+        TotalPriceresult3.setText("Total Sales Tax: ");
+
+        TotalPriceresult4.setText("Total of all Loan Payments:");
+
+        TotalPriceresult5.setText("Total Loan Interest:");
+
+        TotalPriceresult6.setText("Total Cost: ");
+
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(calculateMonthlyPay)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(inputSalesTax2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                            .addComponent(inputTradeIn2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(inputDownPayment2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(inputIntRate2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(inputLoanTerm2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(inputVehiclePrice, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(72, 72, 72)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TotalPriceresult1, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TotalPriceresult2, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TotalPriceresult3, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TotalPriceresult6, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TotalPriceresult5, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TotalPriceresult4, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(912, Short.MAX_VALUE))
+        );
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputVehiclePrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17)
+                            .addComponent(TotalPriceresult1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputLoanTerm2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel18)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(TotalPriceresult2)))
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputIntRate2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel19))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputDownPayment2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel20)))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(TotalPriceresult3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(TotalPriceresult4)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(inputTradeIn2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel21)
+                    .addComponent(TotalPriceresult5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(inputSalesTax2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22)
+                    .addComponent(TotalPriceresult6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(calculateMonthlyPay)
+                .addContainerGap(443, Short.MAX_VALUE))
+        );
+
+        AutoLoanTab.addTab("Total Price", jPanel12);
+
+        calculateTotalPrice.setText("calculate");
+        calculateTotalPrice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calculateTotalPriceActionPerformed(evt);
+            }
+        });
+
+        jLabel23.setText("Monthly Payment");
+
+        jLabel24.setText("Loan Term");
+
+        jLabel26.setText("Interest Rate");
+
+        jLabel27.setText("Down Payment");
+
+        jLabel28.setText("Trade In Value");
+
+        jLabel29.setText("Sales Tax");
+
+        MonthlyPaymentresult6.setText("Total Cost: ");
+
+        MonthlyPaymentresult5.setText("Total Loan Interest:");
+
+        MonthlyPaymentresult4.setText("Total of all Loan Payments:");
+
+        MonthlyPaymentresult3.setText("Total Sales Tax: ");
+
+        MonthlyPaymentresult2.setText("Total Loan Amount: ");
+
+        MonthlyPaymentresult1.setText("Monthly Loan Payment: ");
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(calculateTotalPrice)
+                    .addComponent(monthlyPay)
+                    .addComponent(inputLoanTerm)
+                    .addComponent(inputIntRate)
+                    .addComponent(inputDownPayment)
+                    .addComponent(inputTradeIn)
+                    .addComponent(inputSalesTax))
+                .addGap(69, 69, 69)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(MonthlyPaymentresult1, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MonthlyPaymentresult2, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MonthlyPaymentresult3, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MonthlyPaymentresult6, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MonthlyPaymentresult5, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MonthlyPaymentresult4, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(952, Short.MAX_VALUE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(monthlyPay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel23))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputLoanTerm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel24))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputIntRate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel26))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputDownPayment, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel27))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputTradeIn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel28))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(inputSalesTax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel29)))
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel13Layout.createSequentialGroup()
+                                .addComponent(MonthlyPaymentresult1)
+                                .addGap(28, 28, 28))
+                            .addComponent(MonthlyPaymentresult2, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(22, 22, 22)
+                        .addComponent(MonthlyPaymentresult3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MonthlyPaymentresult4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MonthlyPaymentresult5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MonthlyPaymentresult6)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(calculateTotalPrice)
+                .addContainerGap(452, Short.MAX_VALUE))
+        );
+
+        AutoLoanTab.addTab("Monthly Payment", jPanel13);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1500, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(AutoLoanTab)
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 730, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(AutoLoanTab)
+                .addContainerGap())
         );
 
-        jTabbedPane1.addTab("tab6", jPanel6);
+        jTabbedPane1.addTab("Auto Loan", jPanel6);
         jTabbedPane1.removeTabAt(1);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -412,7 +770,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGap(0, 730, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("tab7", jPanel7);
+        jTabbedPane1.addTab("Mortgage Payoff", jPanel7);
         jTabbedPane1.removeTabAt(1);
 
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -535,13 +893,61 @@ public class Dashboard extends javax.swing.JFrame {
 
         jMenu1.setText("Open Tab");
 
-        jMenuItem1.setText("House Affordablity");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        HAMenuItem.setText("House Affordablity");
+        HAMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                HAMenuItemActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenu1.add(HAMenuItem);
+
+        MLMenuItem.setText("Monthly Loan");
+        MLMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MLMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(MLMenuItem);
+
+        MPMenuItem.setText("Mortgage Payment");
+        MPMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MPMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(MPMenuItem);
+
+        BvLMenuItem.setText("Buy vs Loan");
+        BvLMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BvLMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(BvLMenuItem);
+
+        CCMenuItem.setText("Currency Converter");
+        CCMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CCMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(CCMenuItem);
+
+        ALMenuItem.setText("Auto Loan");
+        ALMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ALMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(ALMenuItem);
+
+        MPayoffMenuItem.setText("Mortgage Payoff");
+        MPayoffMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MPayoffMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(MPayoffMenuItem);
 
         jMenuBar1.add(jMenu1);
 
@@ -679,10 +1085,10 @@ public class Dashboard extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTabbedPane1StateChanged
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void HAMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HAMenuItemActionPerformed
         // TODO add your handling code here:
         openHouseAffordability();
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_HAMenuItemActionPerformed
 
     private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
         // TODO add your handling code here:
@@ -740,6 +1146,155 @@ public class Dashboard extends javax.swing.JFrame {
         MPlabel.setText("<html><u>Mortgage Payment</u></html>");
         setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     }//GEN-LAST:event_MPlabelMouseExited
+
+    private void BvLlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BvLlabelMouseClicked
+        // TODO add your handling code here:
+        openBuyvLoan();
+    }//GEN-LAST:event_BvLlabelMouseClicked
+
+    private void BvLlabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BvLlabelMouseEntered
+        // TODO add your handling code here:
+        BvLlabel.setText(String.format("<html><u><b>Buy vs Loan</b></u></html>"));
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_BvLlabelMouseEntered
+
+    private void BvLlabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BvLlabelMouseExited
+        // TODO add your handling code here:
+        BvLlabel.setText("<html><u>Buy vs Loan</u></html>");
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_BvLlabelMouseExited
+
+    private void CClabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CClabelMouseClicked
+        // TODO add your handling code here:
+        openCurrencyConverter();
+    }//GEN-LAST:event_CClabelMouseClicked
+
+    private void CClabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CClabelMouseEntered
+        // TODO add your handling code here:
+        CClabel.setText(String.format("<html><u><b>Currency Converter</b></u></html>"));
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_CClabelMouseEntered
+
+    private void CClabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CClabelMouseExited
+        // TODO add your handling code here:
+        CClabel.setText("<html><u>Currency Converter</u></html>");
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        
+    }//GEN-LAST:event_CClabelMouseExited
+
+    private void ALlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ALlabelMouseClicked
+        // TODO add your handling code here:
+        openAutoLoan();
+    }//GEN-LAST:event_ALlabelMouseClicked
+
+    private void ALlabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ALlabelMouseEntered
+        // TODO add your handling code here:
+        ALlabel.setText(String.format("<html><u><b>Auto Loan</b></u></html>"));
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_ALlabelMouseEntered
+
+    private void ALlabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ALlabelMouseExited
+        // TODO add your handling code here:
+        ALlabel.setText("<html><u>Auto Loan</u></html>");
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_ALlabelMouseExited
+
+    private void MPayofflabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MPayofflabelMouseClicked
+        // TODO add your handling code here:
+        openMortgagePayoff();
+    }//GEN-LAST:event_MPayofflabelMouseClicked
+
+    private void MPayofflabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MPayofflabelMouseEntered
+        // TODO add your handling code here:
+        MPayofflabel.setText(String.format("<html><u><b>Mortgage Payoff</b></u></html>"));
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_MPayofflabelMouseEntered
+
+    private void MPayofflabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MPayofflabelMouseExited
+        // TODO add your handling code here:
+        MPayofflabel.setText("<html><u>Mortgage Payoff</u></html>");
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_MPayofflabelMouseExited
+
+    private void MPMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MPMenuItemActionPerformed
+        // TODO add your handling code here:
+        openMortgagePayment();
+    }//GEN-LAST:event_MPMenuItemActionPerformed
+
+    private void MLMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MLMenuItemActionPerformed
+        // TODO add your handling code here:
+        openMonthlyLoan();
+    }//GEN-LAST:event_MLMenuItemActionPerformed
+
+    private void BvLMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BvLMenuItemActionPerformed
+        // TODO add your handling code here:
+        openBuyvLoan();
+    }//GEN-LAST:event_BvLMenuItemActionPerformed
+
+    private void CCMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CCMenuItemActionPerformed
+        // TODO add your handling code here:
+        openCurrencyConverter();
+    }//GEN-LAST:event_CCMenuItemActionPerformed
+
+    private void ALMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ALMenuItemActionPerformed
+        // TODO add your handling code here:
+        openAutoLoan();
+    }//GEN-LAST:event_ALMenuItemActionPerformed
+
+    private void MPayoffMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MPayoffMenuItemActionPerformed
+        // TODO add your handling code here:
+        openMortgagePayoff();
+    }//GEN-LAST:event_MPayoffMenuItemActionPerformed
+
+    private void inputVehiclePriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputVehiclePriceActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_inputVehiclePriceActionPerformed
+
+    private void calculateMonthlyPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateMonthlyPayActionPerformed
+        // TODO add your handling code here:
+        double vehiclePrice = Double.parseDouble(inputVehiclePrice.getText());
+        int loanTerm = Integer.parseInt(inputLoanTerm2.getText());
+        double intRate = Double.parseDouble(inputIntRate2.getText());
+        double downPayment = Double.parseDouble(inputDownPayment2.getText());
+        double tradeIn = Double.parseDouble(inputTradeIn2.getText());
+        double salesTax = Double.parseDouble(inputSalesTax2.getText());
+        double monthlyPayment = AutoLoan.monthlyPay(vehiclePrice, loanTerm, intRate, tradeIn, downPayment, salesTax);
+        double totalCost = AutoLoan.totalCost2(vehiclePrice, downPayment, tradeIn, salesTax);
+        double totalSalesTax = (vehiclePrice-downPayment)*(salesTax/100);
+        double totalPaid = loanTerm*monthlyPayment;
+        double loanInterest = totalPaid-totalCost;
+        double totalValue = totalPaid+downPayment+tradeIn;
+
+        TotalPriceresult1.setText(String.format("Monthly Loan Payment: %.02f",monthlyPayment));
+        TotalPriceresult2.setText(String.format("Total Loan Amount: %.02f",totalCost));
+        TotalPriceresult3.setText(String.format("Total Sales Tax: %.02f",totalSalesTax));
+        TotalPriceresult4.setText(String.format("Total of %d Loan Payments: %.02f",loanTerm,totalPaid));
+        TotalPriceresult5.setText(String.format("Total Loan Interest: %.02f",loanInterest));
+        TotalPriceresult6.setText(String.format("Total Cost: %.02f",totalValue));
+
+    }//GEN-LAST:event_calculateMonthlyPayActionPerformed
+
+    private void calculateTotalPriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateTotalPriceActionPerformed
+        // TODO add your handling code here:
+        double monthlyPayment = Double.parseDouble(monthlyPay.getText());
+        int loanTerm = Integer.parseInt(inputLoanTerm.getText());
+        double intRate = Double.parseDouble(inputIntRate.getText());
+        double downPayment = Double.parseDouble(inputDownPayment.getText());
+        double tradeIn = Double.parseDouble(inputTradeIn.getText());
+        double salesTax = Double.parseDouble(inputSalesTax.getText());
+        double totalLoanAmount = AutoLoan.totalLoanAmount(monthlyPayment, intRate, loanTerm);
+        double vehiclePrice = AutoLoan.vehiclePrice(monthlyPayment, loanTerm, intRate, tradeIn, downPayment, salesTax, totalLoanAmount);
+        double totalSalesTax = AutoLoan.totalTax(salesTax, downPayment, totalLoanAmount);
+        double totalPaid = monthlyPayment*loanTerm;
+        double loanInterest = totalPaid-totalLoanAmount;
+        double totalValue = totalPaid+downPayment+tradeIn;
+        MonthlyPaymentresult1.setText(String.format("Monthly Loan Payment: $%,.02f",vehiclePrice));
+        MonthlyPaymentresult2.setText(String.format("Total Loan Amount: $%,.02f",totalLoanAmount));
+        MonthlyPaymentresult3.setText(String.format("Total Sales Tax: $%,.02f",totalSalesTax));
+        MonthlyPaymentresult4.setText(String.format("Total of %d Loan Payments: $%,.02f",loanTerm,totalPaid));
+        MonthlyPaymentresult5.setText(String.format("Total Loan Interest: $%,.02f",loanInterest));
+        MonthlyPaymentresult6.setText(String.format("Total Cost: $%,.02f",totalValue));
+    }//GEN-LAST:event_calculateTotalPriceActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -825,10 +1380,71 @@ public class Dashboard extends javax.swing.JFrame {
         int tabCount = jTabbedPane1.getTabCount();
         jTabbedPane1.setSelectedIndex(tabCount-1);
     }
+    
+    public void openBuyvLoan(){
+        jTabbedPane1.addTab("Buy vs Loan", jPanel2);
+        int tabCount = jTabbedPane1.getTabCount();
+        jTabbedPane1.setSelectedIndex(tabCount-1);
+    }
+    
+    public void openAutoLoan(){
+        jTabbedPane1.addTab("Auto Loan", jPanel6);
+        int tabCount = jTabbedPane1.getTabCount();
+        jTabbedPane1.setSelectedIndex(tabCount-1);
+    }
+    
+    public void openMortgagePayoff(){
+        jTabbedPane1.addTab("Mortgage Payoff", jPanel7);
+        int tabCount = jTabbedPane1.getTabCount();
+        jTabbedPane1.setSelectedIndex(tabCount-1);
+    }
+    
+    public void openCurrencyConverter(){
+        jTabbedPane1.addTab("Currency Converter", jPanel5);
+        int tabCount = jTabbedPane1.getTabCount();
+        jTabbedPane1.setSelectedIndex(tabCount-1);
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem ALMenuItem;
+    private javax.swing.JLabel ALlabel;
+    private javax.swing.JTabbedPane AutoLoanTab;
+    private javax.swing.JMenuItem BvLMenuItem;
+    private javax.swing.JLabel BvLlabel;
+    private javax.swing.JMenuItem CCMenuItem;
+    private javax.swing.JLabel CClabel;
+    private javax.swing.JMenuItem HAMenuItem;
     private javax.swing.JLabel HAlabel;
+    private javax.swing.JMenuItem MLMenuItem;
     private javax.swing.JLabel MLlabel;
+    private javax.swing.JMenuItem MPMenuItem;
+    private javax.swing.JMenuItem MPayoffMenuItem;
+    private javax.swing.JLabel MPayofflabel;
     private javax.swing.JLabel MPlabel;
+    private javax.swing.JLabel MonthlyPaymentresult1;
+    private javax.swing.JLabel MonthlyPaymentresult2;
+    private javax.swing.JLabel MonthlyPaymentresult3;
+    private javax.swing.JLabel MonthlyPaymentresult4;
+    private javax.swing.JLabel MonthlyPaymentresult5;
+    private javax.swing.JLabel MonthlyPaymentresult6;
+    private javax.swing.JLabel TotalPriceresult1;
+    private javax.swing.JLabel TotalPriceresult2;
+    private javax.swing.JLabel TotalPriceresult3;
+    private javax.swing.JLabel TotalPriceresult4;
+    private javax.swing.JLabel TotalPriceresult5;
+    private javax.swing.JLabel TotalPriceresult6;
+    private javax.swing.JButton calculateMonthlyPay;
+    private javax.swing.JButton calculateTotalPrice;
+    private javax.swing.JTextField inputDownPayment;
+    private javax.swing.JTextField inputDownPayment2;
+    private javax.swing.JTextField inputIntRate;
+    private javax.swing.JTextField inputIntRate2;
+    private javax.swing.JTextField inputLoanTerm;
+    private javax.swing.JTextField inputLoanTerm2;
+    private javax.swing.JTextField inputSalesTax;
+    private javax.swing.JTextField inputSalesTax2;
+    private javax.swing.JTextField inputTradeIn;
+    private javax.swing.JTextField inputTradeIn2;
+    private javax.swing.JTextField inputVehiclePrice;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -840,8 +1456,20 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -852,10 +1480,11 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -877,6 +1506,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField monthlyPay;
     // End of variables declaration//GEN-END:variables
 
 }
