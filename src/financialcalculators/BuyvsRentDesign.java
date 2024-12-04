@@ -167,7 +167,7 @@ public class RentVsBuyCalculator {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 153, 255));
 
-        jTextField2.setBackground(new java.awt.Color(255, 51, 51));
+        jTextField2.setBackground(new java.awt.Color(153, 153, 153));
         jTextField2.setText("                                        Home Rent");
         jTextField2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -176,7 +176,7 @@ public class RentVsBuyCalculator {
             }
         });
 
-        jTextField3.setBackground(new java.awt.Color(255, 51, 51));
+        jTextField3.setBackground(new java.awt.Color(153, 153, 153));
         jTextField3.setText("                                Home Purchase");
         jTextField3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -189,7 +189,7 @@ public class RentVsBuyCalculator {
 
         jLabel4.setText("Down payment");
 
-        jLabel3.setBackground(new java.awt.Color(255, 102, 0));
+        jLabel3.setBackground(new java.awt.Color(255, 102, 102));
         jLabel3.setText("           CALCULATE");
         jLabel3.setAutoscrolls(true);
         jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -302,7 +302,7 @@ public class RentVsBuyCalculator {
 
         jLabel20.setText("Upfront cost ");
 
-        jTextField14.setBackground(new java.awt.Color(255, 51, 51));
+        jTextField14.setBackground(new java.awt.Color(153, 153, 153));
         jTextField14.setText("                                       Your information ");
         jTextField14.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -555,16 +555,13 @@ public class RentVsBuyCalculator {
                             .addComponent(jLabel24)
                             .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel25)
                             .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(5, 5, 5)
-                                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -574,7 +571,7 @@ public class RentVsBuyCalculator {
                             .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -600,8 +597,8 @@ public class RentVsBuyCalculator {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel15)
-                            .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15))))
+                            .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(15, 15, 15))
         );
 
         pack();
@@ -632,7 +629,7 @@ try {
     private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField23ActionPerformed
  try {
         double upfrontCost = Double.parseDouble(jTextField18.getText());
-        JOptionPane.showMessageDialog(this, "Upfront Cost: $" + upfrontCost);
+        JOptionPane.(this, "Upfront Cost: $" + upfrontCost);
     } catch (NumberFormatException e) {
         JOptionPane.showMessageDialog(this, "Invalid upfront cost.");
     }        // TODO add your handling code here:
@@ -648,11 +645,13 @@ try {
     }//GEN-LAST:event_jTextField11ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
- try {
+// Parse the input as a double
         double homePrice = Double.parseDouble(jTextField1.getText());
-        JOptionPane.showMessageDialog(this, "Home Price: $" + homePrice);
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this, "Invalid price entered.");
+        // Print the home price to the console
+        System.out.println("Home Price entered: $" + homePrice);
+     // Handle invalid input
+        System.out.println("Please enter a valid number.");
+    }
     }        // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 

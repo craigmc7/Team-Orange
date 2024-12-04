@@ -8,7 +8,6 @@ public class MonthlyLoanCalc2 {
             return initAmount / (yrs * 12);
         }
         double monthlyInt = interestRate / 12;
-        double payment = (initAmount * monthlyInt) / (1 - (1 / Math.pow(1 + monthlyInt, yrs * 12)));
-        return payment;
+        return (initAmount * monthlyInt) / (1 - (1 / Math.pow(1 + monthlyInt, yrs * 12)));
     }
 }

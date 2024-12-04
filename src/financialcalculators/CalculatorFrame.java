@@ -59,7 +59,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         });
     
     // call monthly loan helper
-    double monthlyPayment = MonthlyLoanCalc.monthlyLoanPayment(.05, 1, 1000);
+    double monthlyPayment = MonthlyLoanCalc2.monthlyLoanPayment(.05, 1, 1000);
 
     // print to console
     System.out.println("Your monthly payment is: $" + String.format("%.2f", monthlyPayment)); //should be about $85
